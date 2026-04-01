@@ -11,8 +11,8 @@ import streamlit as st
 # ... your other imports
 
 # Load model
-model = tf.keras.models.load_model("model/mobilenetv2_traffic.h5", compile=False)
-
+# Change the extension from .h5 to .keras
+model = tf.keras.models.load_model("model/mobilenetv2_traffic.keras", compile=False)
 # Class labels (you can rename later)
 classes = [
     "Speed Limit 20",
