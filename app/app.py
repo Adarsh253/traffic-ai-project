@@ -2,6 +2,13 @@ import streamlit as st
 import numpy as np
 from PIL import Image
 import tensorflow as tf
+import os
+# Force Keras to use the legacy loading system
+os.environ["TF_USE_LEGACY_KERAS"] = "1"
+
+import tensorflow as tf
+import streamlit as st
+# ... your other imports
 
 # Load model
 model = tf.keras.models.load_model("model/mobilenetv2_traffic.h5", compile=False)
