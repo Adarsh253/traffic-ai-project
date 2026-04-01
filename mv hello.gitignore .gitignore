@@ -1,0 +1,6 @@
+venv/
+data/
+raw_gtsrb/
+*.zip
+*.h5
+__pycache__/
